@@ -1,29 +1,29 @@
 {
-	"redirects": [
-		{
-			"source": "/p/:item*",
-			"destination": "https://pricedata.dk/r/:item*",
-			"permanent": true
-		},
-		{
-			"source": "/c/:mainCategory/:subCategory/:category/:itemslug",
-			"destination": "https://pricedata.dk/r/:itemslug",
-			"permanent": true
-		},
-		{
-			"source": "/b/:item*",
-			"destination": "https://pricedata.dk/b/:item*",
-			"permanent": true
-		},
-		{
-			"source": "/",
-			"destination": "https://pricedata.dk/",
-			"permanent": true
-		},
-		{
-			"source": "/:path*",
-			"destination": "https://pricedata.dk/",
-			"permanent": true
-		}
-	]
+  "redirects": [
+    {
+      "source": "/p/:item*",
+      "destination": "https://pricedata.dk/r/:item*",
+      "permanent": true
+    },
+    {
+      "source": "/c/:mainCategory/:subCategory/:category/:itemslug*",
+      "destination": "https://pricedata.dk/r/:itemslug*",
+      "permanent": true
+    },
+    {
+      "source": "/b/:item*",
+      "destination": "https://pricedata.dk/b/:item*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://pricedata.dk/",
+      "permanent": true
+    },
+    {
+      "source": "/:path((?!robots.txt).*)",
+      "destination": "https://pricedata.dk/",
+      "permanent": true
+    }
+  ]
 }
